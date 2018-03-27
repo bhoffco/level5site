@@ -270,14 +270,14 @@ span .lime {
 }
 
 .boxeswrapper {
-  width: 70%;
+  width: 75%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: .85vw;
   text-align: center;
-  padding: .6rem 0 1px 0;
+  padding: .6rem 0 1px .6rem;
   color: #3b3a30;
 
 }
@@ -288,15 +288,11 @@ span .lime {
   padding: 1rem 1rem 3rem 1rem;
   background: white;
   flex-basis: 21.5%;
-
-}
-
-
-
-.products a {
   text-decoration: none;
+  color: #3b3a30;
 
 }
+
 
 .products h2 {
   padding: 1rem 0 1rem 0;
@@ -308,14 +304,17 @@ span .lime {
   transition: ease-in-out 300ms;
   opacity: .8;
   cursor: hand;
-    cursor: pointer;
+  cursor: pointer;
 
 }
 
-.link-remove {
-
-
+.boxes a {
+  text-decoration: underline;
+  margin: 0;
+  display: inline-block;
 }
+
+
 
 @media (max-width: 1635px) {
 .boxeswrapper1 {
