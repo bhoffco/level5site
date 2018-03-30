@@ -311,7 +311,7 @@ span .lime {
   margin-left: .5rem;
   padding: 1rem;
   flex-basis: 25%;
-   
+
 
 }
 
@@ -549,7 +549,80 @@ span .lime {
   color: #f4f4f4;
 }
 
+/* managed services */
 
+.completeittop {
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.5;
+
+  color: #3b3a30;
+  text-align: center;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.complete {
+  font-size: 4vw;
+}
+
+.it {
+  font-size: 5vw;
+  color: lime;
+  padding-left: .3rem;
+}
+
+.completeittop p {
+  font-size: 1.5vw;
+}
+
+.enteremailforcontact {
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: #3b3a30;
+  text-align: center;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.enteremailforcontact .nameinput {
+  padding: .25rem;
+  height: 2vw;
+  width: 10vw;
+  background: lightgrey;
+}
+
+.enteremailforcontact .emailinput[type="email"] {
+  padding: .25rem;
+  height: 2vw;
+  width: 10vw;
+  background: lightgrey;
+}
+
+.reqcall {
+  border-radius: 3px;
+  height: 2vw;
+  width: 10vw;
+  color: #3b3a30;
+  cursor: pointer;
+  background: lightblue;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.reqcall:hover {
+  background: #3a606e;
+  color: #f4f4f4;  
+}
 
 
 
@@ -644,7 +717,7 @@ span .lime {
 
     .products1,
     .products2 {
-      font-size: .7em
+      font-size: .75em
     }
 
 }
