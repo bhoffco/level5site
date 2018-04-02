@@ -28,15 +28,22 @@ body {
 
 /* header */
 
+
+
 header {
   background-color: #f4f4f4;
   box-shadow: 0 5px 7px -7px black;
   position: sticky;
   overflow: hidden;
-
-
-
 }
+
+  header::after,
+  .section1::after,
+  #section1::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 
   .stick {
     position: fixed;
@@ -45,18 +52,11 @@ header {
     z-index: 9999;
   }
 
-header::after,
-.section1::after,
-#section1::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 .container-header {
   max-width: 1200px;
   width: 75%;
   margin: 0 auto;
+
 
 }
 
@@ -115,23 +115,27 @@ header .current a {
 
 .section1::after {
   background-image: url('../img/l5large_banner.jpg');
-  background-position: center;
   opacity: 1;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   content: "";
+  display: block;
   position: absolute;
   z-index: -1;
+  width: 100%;
+  min-height: 35em;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+
 
 
 
@@ -147,11 +151,11 @@ header .current a {
 }
 
 .section1 h2 {
-  font-size: 1.75vw;
+  font-size: 1.7vw;
 }
 
 .uppercase-font-36 {
-  font-size: 2.2vw;
+  font-size: 2vw;
   color: white;
   padding-top: 1.1rem;
 
@@ -170,7 +174,6 @@ header .current a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
-
 
 
 }
@@ -204,9 +207,8 @@ span .lime {
   /*box-shadow: var(--shadow); */
   box-sizing: border-box;
   padding-top: 2rem;
-
-
 }
+
 
 /*showcase clean*/
 
@@ -411,6 +413,142 @@ span .lime {
 }
 
 /* section 4 download e-books */
+
+/* test grid sevices area */
+
+
+
+.section3wrappertest {
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.section3test {
+  background: #f4f4f4;
+  padding: 2rem 0 2rem 0;
+  margin: 0 auto;
+
+
+
+}
+
+
+
+.products1test h2, .products2test
+
+ h2 {
+  padding: .95rem 0 .95rem 0;
+}
+
+
+
+
+
+/*.products1:first-child {
+  margin-left: 0;
+}
+.products2:first-child {
+  margin-left: 0;
+} */
+
+.service1test {
+ display: grid;
+
+ grid-template-columns: repeat(4, 1fr);
+ grid-auto-rows: minmax(250px, auto);
+
+ grid-column-gap: .5em;
+ grid-row-gap: .5em
+
+
+
+
+}
+
+.service1test p {
+  line-height: 1.5;
+}
+
+.products1test {
+  text-decoration: none;
+  color: #3b3a30;
+  box-shadow: var(--shadow);
+  text-align: center;
+  display: block;
+  background: white;
+  /*   margin-left: .5rem; */
+  padding: 1rem;
+
+
+
+
+}
+
+.service2 {
+  display: flex;
+}
+
+.products2test {
+  text-decoration: none;
+  color: #3b3a30;
+  box-shadow: var(--shadow);
+  text-align: center;
+  padding: 1rem;
+
+  background: white;
+  /*margin-left: .5rem;
+  margin-top: .6rem; */
+
+
+}
+
+/*.boxeswrapper1 {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: .75rem;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  font-size: .85vw;
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+  color: #3b3a30;
+} */
+
+.boxeswrapper {
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  font-size: .85vw;
+  text-align: center;
+  padding: .6rem 0 1px .6rem;
+  color: #3b3a30;
+}
+
+/*.products {
+  box-shadow: var(--shadow);
+  padding: 1rem 1rem 3rem 1rem;
+  background: white;
+  flex-basis: 21.5%;
+  text-decoration: none;
+  color: #3b3a30;
+
+} */
+
+.productstest:hover, .products1test:hover, .products2test:hover {
+  color: white;
+  background: #3a606e;
+  transition: ease-in-out 300ms;
+  opacity: .8;
+  cursor: hand;
+  cursor: pointer;
+}
+
+/* ebooks */
 
 .section4 {
   background: #f4f4f4;
@@ -621,7 +759,7 @@ span .lime {
 
 .reqcall:hover {
   background: #3a606e;
-  color: #f4f4f4;  
+  color: #f4f4f4;
 }
 
 
@@ -648,6 +786,7 @@ span .lime {
     .products2 {
       font-size: .9em
     }
+
   }
 
   @media (max-width: 1445px) {
@@ -655,6 +794,9 @@ span .lime {
     .products2 {
       font-size: .8em
     }
+
+
+
 
     .waysnest2 {
       flex: 3;
@@ -672,6 +814,20 @@ span .lime {
   }
 
 }
+
+@media (max-width: 1525px) {
+  .service1test {
+   display: grid;
+
+   grid-template-columns: 33% 33% 33%;
+
+   grid-column-gap: .5em;
+   grid-row-gap: .5em
+
+  }
+
+}
+
 
 
 @media (max-width: 1350px) {
@@ -720,6 +876,8 @@ span .lime {
       font-size: .75em
     }
 
+
+
 }
 
 @media (max-width: 1250px) {
@@ -761,10 +919,20 @@ span .lime {
 }
 }
 
-@media (max-width: 1035px) {
+@media (max-width: 1070px) {
   .container-header,
   .container {
     width: 90%;
+  }
+
+  .service1test {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-auto-rows: minmax(250px, auto);
+   grid-auto-columns: minmax(250px);
+   grid-column-gap: .5em;
+   grid-row-gap: .5em
+
   }
 
   .section1-container {
