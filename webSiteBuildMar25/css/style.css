@@ -139,13 +139,76 @@ header .current a {
   padding: 1em;
   color: #f4f4f4;
   box-shadow: var(--shadow);
+  opacity: 0;
   border-radius: 3px;
+  position: relative;
+  animation: callnow;
+  animation-delay: 2s;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes callnow {
+  from {
+    opacity: 0;
+    transform: translatey(200%)
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0%)
+  }
 
 }
 
-.gradient {
+.showcase1 {
+  opacity: 0;
+  position: relative;
+  animation: showcase;
+  animation-delay: 200ms;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.showcase2 {
+  opacity: 0;
+  position: relative;
+  animation: showcase;
+  animation-delay: 300ms;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.showcase3 {
+  opacity: 0;
+  position: relative;
+  animation: showcase;
+  animation-delay: 400ms;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.showcase4 {
+  opacity: 0;
+  position: relative;
+  animation: showcase;
+  animation-delay: 500ms;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showcase {
+  from {
+    opacity: 0;
+    transform: translatex(-200%)
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0%)
+  }
 
 }
+
 
 
 
@@ -165,6 +228,7 @@ header .current a {
   width: 75%;
   max-width: 1200px;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: 50%;
   margin-top: 3.5em;
@@ -198,12 +262,12 @@ header .current a {
   background-repeat: no-repeat;
   background-size: cover;
   /*following just for demo purposes to add height and top padding*/
-  height: 25rem;
+  height: 28rem;
 }
 
 
 .curtain {
-  height: 25rem;
+  height: 28rem;
   background: rgba(255,255,255,.2);
   background: rgba(50,76,100,.7)
 }
@@ -418,13 +482,17 @@ span .lime {
  display: grid;
 
  grid-template-columns: repeat(4, 1fr);
- grid-auto-rows: minmax(250px, auto);
+ grid-auto-rows: minmax(225px, auto);
  grid-column-gap: .5em;
- grid-row-gap: .5em
+ grid-row-gap: .5em;
 }
 
 .service1test p {
   line-height: 1.5;
+}
+
+.icon {
+  margin-top: .5rem;
 }
 
 .products1test {
@@ -436,6 +504,7 @@ span .lime {
   background: white;
   /*   margin-left: .5rem; */
   padding: 1rem;
+
 
 }
 
